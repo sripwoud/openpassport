@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "node",
     "declaration": true,
     "outDir": "./dist",
     "strict": false,
@@ -9,8 +10,8 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "jsx": "react", // Add this line
-    "moduleResolution": "node" // Add this line if not already present
+    "jsx": "react",
+    "allowJs": true
   },
   "include": [
     "src/index.ts",
